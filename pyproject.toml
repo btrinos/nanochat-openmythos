@@ -1,0 +1,27 @@
+[project]
+name = "nanochat-openmythos"
+version = "0.1.0"
+description = "Small PyTorch experiment for OpenMythos-style nanochat architecture changes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "nanochat-openmythos contributors" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "torch>=2.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
